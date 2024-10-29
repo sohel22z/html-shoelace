@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML / shoelace style</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 5px;
+        }
+    
+        sl-card {
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <sl-button variant="primary">Primary Button</sl-button>
+    <sl-button variant="success">Success Button</sl-button>
+    <sl-button variant="danger">Danger Button</sl-button>
+
+    <div class="grid-container">
+        <sl-card>
+            <img slot="image" src="https://placehold.co/50x25" alt="Placeholder 1">
+            <strong>Card Title 1</strong>
+            <p>This is a sample description for the first card.</p>
+        </sl-card>
+    
+        <sl-card>
+            <img slot="image" src="https://placehold.co/50x25" alt="Placeholder 2">
+            <strong>Card Title 2</strong>
+            <p>This is a sample description for the second card.</p>
+        </sl-card>
+    
+        <sl-card>
+            <img slot="image" src="https://placehold.co/50x25" alt="Placeholder 3">
+            <strong>Card Title 3</strong>
+            <p>This is a sample description for the third card.</p>
+        </sl-card>
+    
+        <sl-card>
+            <img slot="image" src="https://placehold.co/50x25" alt="Placeholder 4">
+            <strong>Card Title 4</strong>
+            <p>This is a sample description for the fourth card.</p>
+        </sl-card>
+    </div>
+
+    <!-- Main Script -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+
+</body>
+
+</html>
